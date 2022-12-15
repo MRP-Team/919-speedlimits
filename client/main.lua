@@ -1,12 +1,10 @@
-local SpeedLimitEnabled = false
-local UIOpen = false
+local SpeedLimitEnabled = true
+local UIOpen = true
 
 -- TEST COMMAND
---[[
 RegisterCommand('speedlimit', function(source, args)
     SpeedLimitEnabled = not SpeedLimitEnabled
 end)
-]]
 
 RegisterNetEvent("919-speedlimit:client:ToggleSpeedLimit", function(toggle)
     if toggle then
